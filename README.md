@@ -40,7 +40,7 @@ Our team was tasked with the assignment of assisting a couple who plan to travel
 
 ### Analysis
 - we used a free library -*"geocoder"* to generate the longitudes and latitudes of the addresses for our tripadvisor and yelp data so we can easily map the coordinates using Tableau Tableau Desktop.
-   1. [![Trip Planner GoeMap.JPG](ETL-Project2/Resources/Trip Planner GoeMap.JPG "Trip Planner GoeMap.JPG")](http://Trip Planner GoeMap.JPG "Trip Planner GoeMap.JPG")
+   1. [![Trip Planner GoeMap.JPG](ETL-Project2/Resources/Trip Planner GoeMap.JPG "Trip Planner GoeMap.JPG")](http://github.com/cschurter/ETL-Project2/blob/master/Resources/Trip%20Planner%20GoeMap.JPG "Trip Planner GoeMap.JPG")
    1. [![Yelp_Mapping.JPG](ETL-Project2/Resources/Yelp_Mapping.JPG "Yelp_Mapping.JPG")](http://github.com/cschurter/ETL-Project2/blob/master/Resources/Yelp_Mapping.JPG "Yelp_Mapping.JPG")
 - we created a historgam for SD events showing the price range, neighborhood and date informations.
     1. [![SD_Events.JPG](ETL-Project2/Resources/SD_Events.JPG "SD_Events.JPG")](http://github.com/cschurter/ETL-Project2/blob/master/Resources/SD_Events.JPG "SD_Events.JPG")
