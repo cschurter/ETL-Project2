@@ -9,9 +9,11 @@ CREATE TABLE if not exists events (
     `Description` VARCHAR(400) CHARACTER SET utf8,
     `Category` VARCHAR(100) CHARACTER SET utf8,
     `Neighborhood` VARCHAR(200) CHARACTER SET utf8,
-    `Cost` integer,
-    `Date` date,
     `Reviews` integer null,
+    `Date` date,
+    `Cost` integer,
+	`Lat` double,
+    `Lng` double,
     primary key(id)
 );
 
@@ -26,6 +28,8 @@ CREATE TABLE if not exists attractions (
     `Reviews` integer null,
     `Date` date,
     `Cost` integer,
+	`Lat` double,
+    `Lng` double,
     primary key(id)
 );
 
@@ -41,6 +45,8 @@ CREATE TABLE if not exists restaurants (
     `Reviews` integer null,
     `Date` date,
     `Cost` integer,
+    `Lat` double,
+    `Lng` double,
     primary key(id)
 );
 
@@ -86,3 +92,7 @@ from restaurants) as a
 where a.Reviews = 4
 or a.Reviews = 3
 order by a.Name;
+
+
+select * from (select * from events union select * from attractions union select * from restaurants) as a 
+where a.Cost = 4 AND a.Address IS NOT NULL order by a.Category ;
